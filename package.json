@@ -1,0 +1,27 @@
+{
+  "name": "passport-endo-passthru",
+  "version": "1.0.1",
+  "description": "endo passthru authentication strategy for Passport",
+  "main": "./lib",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/octoblu/passport-endo-passthru.git"
+  },
+  "keywords": [
+    "passport",
+    "octoblu",
+    "endo"
+  ],
+  "author": "Octoblu Inc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/octoblu/passport-endo-passthru/issues"
+  },
+  "homepage": "https://github.com/octoblu/passport-endo-passthru",
+  "dependencies": {
+    "passport-strategy": "^1.0.0"
+  }
+}

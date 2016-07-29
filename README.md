@@ -32,3 +32,26 @@ application:
           res.json({ uuid: null });
         }
       });
+
+#### Example api-strategy.coffee
+
+```coffee
+_ = require 'lodash'
+PassportEndoPassthru = require 'passport-endo-passthru'
+
+class PassthruStrategy extends PassportEndoPassthru
+  constructor: (options={}) ->
+    super options, @onAuthorization
+
+  onAuthorization: (uuid, token, callback) =>
+    callback null, {
+      id: uuid
+      username: uuid
+      secrets:
+        credentials:
+          uuid: uuid
+          token: token
+    }
+
+module.exports = PassthruStrategy
+```
